@@ -2,6 +2,7 @@
 
 function solution(N) {
     if (N > 0 && Number.isInteger(N) === true){
- return N.toString(2)
+        let binary = N.toString(2)
+ return binary
 } return "Enter A Positive Number That Is Not A Float. INTEGERS ONLY"
 }
