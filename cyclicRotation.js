@@ -13,7 +13,7 @@ function solution(A, K) {
             return A
         }
 // create a new array by slicing the last element and concating it with the rest of the elements except the last
-        const rotatedArr = A.slice(rotations).concat(A.slice(0, rotations));
+        const rotatedArr = A.slice(-rotations).concat(A.slice(0, -rotations));
 // Final Output
         return rotatedArr;
     }
