@@ -8,7 +8,7 @@ function solution(N) {
         let maxGap = 0;
         let currentGap = 0;
         let countingState = false;
-    // Loop over the binary number to act on it accordingly
+    // Iterate over the binary number as we apply logic to the elements of the string
     for ( let i=0; i < binary.length; i++){
         if(binary[i] === "1"){
             if (currentGap > maxGap){
@@ -22,5 +22,6 @@ function solution(N) {
     }
     // Return the value  of Maximum Gap using the outermost conditionnal
     return maxGap
+    // If N is not a positive integer we get this output
     } return "Enter A Positive Number That Is Not A Float. INTEGERS ONLY"
 }
