@@ -65,8 +65,8 @@ print(test3)
 print(test4)
 print(test5)
 
-
 # Task 3
+
 import itertools
 
 def  solution(A,B,C,D):
