@@ -38,7 +38,7 @@ function solutionMiss(A) {
         else{
             return count
         }
-    }
+    }ty
 }
 
 // Perfomance tests considered.. Time complexity 
