@@ -33,47 +33,37 @@ print(task_one(r3,v3))
 
 # Task 2
 
-# # def solution(A,B):
-# #     A.sort()
-# #     B.sort()
-# #     i = 0
-# #     for a in A:
-# #         if i < len(B) -1 and B[i] < a:
-# #             i += 1
-# #         if a == B[i]:
-# #             return a
-# #     return -1
-# def solution(A,B):
-#     A.sort()
-#     B.sort()
-#     i = 0
-#     for a in A:
-#         while i < len(B) and B[i] < a:
-#             i += 1
-#         if i<len(B) and a == B[i]:
-#             return a
-#     return -1
-# arr1 = [1,3,2,1]
-# arr2 = [4,2,5,3,2]
-# arr3 = [2,-3,1,2,2,1]
-# arr4 = [-3,3,3,5,6,5]
-# arr5=[2,1]
-# arr6=[3,3]
-# arr7=[5]
-# arr8=[5]
-# arr9=[4,5,6,7,8]
-# arr10=[3,6]
-# test1= solution(arr1, arr2)
-# test2 = solution(arr3, arr4)
-# test3 = solution(arr5, arr6)
-# test4 = solution(arr7, arr8)
-# test5 = solution(arr9, arr10)
+def task_two(A,B):
+    A.sort()
+    B.sort()
+    i = 0
+    for a in A:
+        while i < len(B) and B[i] < a:
+            i += 1
+        if i<len(B) and a == B[i]:
+            return a
+    return -1
+arr1 = [1,3,2,1]
+arr2 = [4,2,5,3,2]
+arr3 = [2,-3,1,2,2,1]
+arr4 = [-3,3,3,5,6,5]
+arr5=[2,1]
+arr6=[3,3]
+arr7=[5]
+arr8=[5]
+arr9=[4,5,6,7,8]
+arr10=[3,6]
+test1= task_two(arr1, arr2)
+test2 = task_two(arr3, arr4)
+test3 = task_two(arr5, arr6)
+test4 = task_two(arr7, arr8)
+test5 = task_two(arr9, arr10)
 
-# print(test1)
-# print(test2)
-# print(test3)
-# print(test4)
-# print(test5)
+print(test1)
+print(test2)
+print(test3)
+print(test4)
+print(test5)
 
 
 # Task 3
