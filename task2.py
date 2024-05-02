@@ -1,3 +1,38 @@
+# Task 1
+
+# you can write to stdout for debugging purposes, e.g.
+# print("this is a debug message")
+
+def task_one(R, V):
+    # Implement your solution here
+    n = len(R)
+    minimum_balance_A = minimum_balance_B = 0
+    balance_A = 0
+    balance_B = 0
+
+    for i in range(n):
+        if R[i] == 'A':
+            balance_A += V[i]
+            minimum_balance_A = min(minimum_balance_A,balance_A)
+        else:
+            balance_B += V[i]
+            minimum_balance_B = min(minimum_balance_B,balance_B)
+    return [-minimum_balance_A,-minimum_balance_B]
+
+
+r1= 'BAABA'
+v1=[2,4,1,1,2]
+r2='ABAB'
+v2=[10,5,10,15]
+r3='B'
+v3=[100]
+
+print(task_one(r1,v1))
+print(task_one(r2,v2))
+print(task_one(r3,v3))
+
+# Task 2
+
 # # def solution(A,B):
 # #     A.sort()
 # #     B.sort()
@@ -40,39 +75,6 @@
 # print(test4)
 # print(test5)
 
-
-# Task 1
-
-# you can write to stdout for debugging purposes, e.g.
-# print("this is a debug message")
-
-# def solution(R, V):
-#     # Implement your solution here
-#     n = len(R)
-#     minimum_balance_A = minimum_balance_B = 0
-#     balance_A = 0
-#     balance_B = 0
-
-#     for i in range(n):
-#         if R[i] == 'A':
-#             balance_A += V[i]
-#             minimum_balance_A = min(minimum_balance_A,balance_A)
-#         else:
-#             balance_B += V[i]
-#             minimum_balance_B = min(minimum_balance_B,balance_B)
-#     return [-minimum_balance_A,-minimum_balance_B]
-
-
-# r1= 'BAABA'
-# v1=[2,4,1,1,2]
-# r2='ABAB'
-# v2=[10,5,10,15]
-# r3='B'
-# v3=[100]
-
-# # print(solution(r1,v1))
-# # print(solution(r2,v2))
-# print(solution(r3,v3))
 
 # Task 3
 import itertools
